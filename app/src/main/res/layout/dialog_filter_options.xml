@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="44dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/close"
+        style="@style/IconButtonStyle"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_close"
+        app:iconTint="@color/white"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/filter_options_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filter_options_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mark_pro_medium"
+        android:text="@string/filter_options_title"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_big"
+        app:layout_constraintBottom_toBottomOf="@id/close"
+        app:layout_constraintLeft_toRightOf="@id/close"
+        app:layout_constraintRight_toLeftOf="@id/done"
+        app:layout_constraintTop_toTopOf="@id/close" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done"
+        style="@style/IconButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/mark_pro_medium"
+        android:letterSpacing="0"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big"
+        app:cornerRadius="15dp"
+        app:iconTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/filter_options_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brand_title"
+        style="@style/FilterTitleStyle"
+        android:layout_marginTop="46dp"
+        android:text="@string/brand_filter_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/close" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/brand_text_input_layout"
+        style="@style/FilterOptionTextInputLayoutStyle"
+        app:layout_constraintLeft_toLeftOf="@id/brand_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brand_title">
+
+        <AutoCompleteTextView
+            android:id="@+id/brand_spinner"
+            style="@style/FilterOptionAutoCompleteTextViewStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/price_title"
+        style="@style/FilterTitleStyle"
+        android:layout_marginTop="17dp"
+        android:text="@string/price_filter_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brand_text_input_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/price_text_input_layout"
+        style="@style/FilterOptionTextInputLayoutStyle"
+        app:layout_constraintLeft_toLeftOf="@id/price_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_title">
+
+        <AutoCompleteTextView
+            android:id="@+id/price_spinner"
+            style="@style/FilterOptionAutoCompleteTextViewStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/size_title"
+        style="@style/FilterTitleStyle"
+        android:layout_marginTop="17dp"
+        android:text="@string/size_filter_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_text_input_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/size_text_input_layout"
+        style="@style/FilterOptionTextInputLayoutStyle"
+        app:layout_constraintLeft_toLeftOf="@id/size_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/size_title">
+
+        <AutoCompleteTextView
+            android:id="@+id/size_spinner"
+            style="@style/FilterOptionAutoCompleteTextViewStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

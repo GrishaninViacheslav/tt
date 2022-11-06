@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brand_filter">
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Motorola</item>
+        <item>Apple</item>
+        <item>Google</item>
+        <item>Nokia</item>
+    </string-array>
+
+    <string-array name="price_filter">
+        <item>$0 \- $100</item>
+        <item>$100 \- $300</item>
+        <item>$300 \- $500</item>
+        <item>$500 \- $800</item>
+        <item>$800 \- $1000</item>
+        <item>$1000 \- $2000</item>
+        <item>$2000 \- $5000</item>
+        <item>$5000 \- $10000</item>
+    </string-array>
+
+    <string-array name="size_filter">
+        <item>4.5 to 5.5 inches</item>
+    </string-array>
+</resources>

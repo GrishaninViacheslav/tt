@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="33dp">
+
+    <ImageView
+        android:id="@+id/cpu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cpu"
+        app:layout_constraintLeft_toLeftOf="@id/cpu_value"
+        app:layout_constraintRight_toRightOf="@id/cpu_value"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cpu_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mark_pro_regular"
+        android:textColor="@color/alt_grey"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/camera_value"
+        app:layout_constraintTop_toBottomOf="@id/cpu_icon"
+        tools:text="Exynos 990" />
+
+    <ImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="@id/cpu_icon"
+        app:layout_constraintLeft_toLeftOf="@id/camera_value"
+        app:layout_constraintRight_toRightOf="@id/camera_value"
+        app:layout_constraintTop_toTopOf="@id/cpu_icon" />
+
+    <TextView
+        android:id="@+id/camera_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mark_pro_regular"
+        android:textColor="@color/alt_grey"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintLeft_toRightOf="@id/cpu_value"
+        app:layout_constraintRight_toLeftOf="@id/ssd_value"
+        app:layout_constraintTop_toTopOf="@id/cpu_value"
+        tools:text="108 + 12 mp" />
+
+
+    <ImageView
+        android:id="@+id/ssd_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ssd"
+        app:layout_constraintBottom_toBottomOf="@id/camera_icon"
+        app:layout_constraintLeft_toLeftOf="@id/ssd_value"
+        app:layout_constraintRight_toRightOf="@id/ssd_value"
+        app:layout_constraintTop_toTopOf="@id/camera_icon" />
+
+    <TextView
+        android:id="@+id/ssd_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mark_pro_regular"
+        android:textColor="@color/alt_grey"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintLeft_toRightOf="@id/camera_value"
+        app:layout_constraintRight_toLeftOf="@id/sd_value"
+        app:layout_constraintTop_toTopOf="@id/cpu_value"
+        tools:text="8 GB" />
+
+    <ImageView
+        android:id="@+id/sd_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sd"
+        app:layout_constraintBottom_toBottomOf="@id/ssd_icon"
+        app:layout_constraintLeft_toLeftOf="@id/sd_value"
+        app:layout_constraintRight_toRightOf="@id/sd_value"
+        app:layout_constraintTop_toTopOf="@id/ssd_icon" />
+
+    <TextView
+        android:id="@+id/sd_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/mark_pro_regular"
+        android:textColor="@color/alt_grey"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintLeft_toRightOf="@id/ssd_value"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cpu_value"
+        tools:text="256 GB" />
+
+    <TextView
+        android:id="@+id/selector_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mark_pro_medium"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintLeft_toLeftOf="@id/cpu_value"
+        app:layout_constraintTop_toBottomOf="@id/cpu_value"
+        android:text="@string/selector_title" />
+
+    <ImageView
+        android:id="@+id/color_option_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bg_circle"
+        app:layout_constraintLeft_toLeftOf="@id/selector_title"
+        app:layout_constraintTop_toBottomOf="@id/selector_title" />
+
+    <ImageView
+        android:id="@+id/color_option_1_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        app:layout_constraintBottom_toBottomOf="@id/color_option_1"
+        app:layout_constraintLeft_toLeftOf="@id/color_option_1"
+        app:layout_constraintRight_toRightOf="@id/color_option_1"
+        app:layout_constraintTop_toTopOf="@id/color_option_1" />
+
+    <ImageView
+        android:id="@+id/color_option_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bg_circle"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/color_option_1"
+        app:layout_constraintTop_toBottomOf="@id/selector_title"
+        app:tint="@color/blue" />
+
+    <ImageView
+        android:id="@+id/color_option_2_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/color_option_2"
+        app:layout_constraintLeft_toLeftOf="@id/color_option_2"
+        app:layout_constraintRight_toRightOf="@id/color_option_2"
+        app:layout_constraintTop_toTopOf="@id/color_option_2" />
+
+    <TextView
+        android:id="@+id/capacity_option_2"
+        style="@style/IconButtonStyle"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_capacity_option_disabled"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/mark_pro_medium"
+        android:letterSpacing="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone"
+        app:cornerRadius="15dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/color_option_1"
+        app:layout_constraintRight_toLeftOf="@id/capacity_option_1"
+        app:layout_constraintTop_toTopOf="@id/color_option_1"
+        tools:text="128 GB" />
+
+    <TextView
+        android:id="@+id/capacity_option_1"
+        style="@style/IconButtonStyle"
+        android:layout_width="70dp"
+        android:background="@drawable/bg_capacity_option_enabled"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/mark_pro_medium"
+        android:letterSpacing="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        app:cornerRadius="15dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/color_option_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/color_option_1"
+        tools:text="256 GB" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_to_cart"
+        style="@style/IconButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/mark_pro_bold"
+        android:letterSpacing="0"
+        android:text="Add to Cart         $1,500.00"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big"
+        app:cornerRadius="15dp"
+        app:iconTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_option_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

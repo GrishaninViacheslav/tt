@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_bottom_navigation_bar.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_capacity_option.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_capacity_option_enabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_category.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_circle.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_counter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_gradient_half_opacity.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_item_category.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_splash.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/bg_splash_screen.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/filter_spinner_dropdown_bg.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_cart.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_category_books.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_category_computer.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_category_health.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_category_phones.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_cpu.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_ecommerce_concept.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_ellipse.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_expand.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_favorite_disabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_favorite_enabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_filter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_home.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_launcher_background.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_location.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_logo_foreground.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_new_sale.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_qr.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_rating_empty.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_rating_fill.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_sd.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_search.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_spash_icon.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_splash_icon_foreground.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_ssd.xml" value="0.3065" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/ic_vector__13_.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/icon_ellipse.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/rating.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/rating_empty.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/rating_fill.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/round_corner_toggle.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/drawable/rounded_dialog.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/font/mark.xml" value="0.34739583333333335" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/activity_main.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/bg_bottom_navigation_bar.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/bg_gradient_half_opacity.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/bottom_sheet_dialog_layout.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/dialog_filter_options.xml" value="0.5" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/fragment_cart.xml" value="0.33" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/fragment_explorer.xml" value="0.33" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/fragment_product_details.xml" value="0.33" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/fragment_product_details_tab.xml" value="0.5" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/fragment_tab_container.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/item_basket.xml" value="0.5" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/item_best_sellers_page.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/item_category.xml" value="0.67" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/item_hot_sale.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/item_product_image.xml" value="0.25" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/menu_dropdown_brand.xml" value="2.175" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/view_best_seller_item.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/view_counter.xml" value="0.67" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/layout/view_product_details_tab_text.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/menu/bg_bottom_navigation_bar.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/xml/rating_empty.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/xml/rating_fill.xml" value="0.3171875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

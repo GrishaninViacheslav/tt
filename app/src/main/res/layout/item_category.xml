@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="12dp">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_category_computer"
+        app:layout_constraintBottom_toBottomOf="@id/background_image"
+        app:layout_constraintLeft_toLeftOf="@id/background_image"
+        app:layout_constraintRight_toRightOf="@id/background_image"
+        app:layout_constraintTop_toTopOf="@id/background_image" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/mark_pro_medium"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintLeft_toLeftOf="@id/background_image"
+        app:layout_constraintRight_toRightOf="@id/background_image"
+        app:layout_constraintTop_toBottomOf="@id/background_image"
+        tools:text="@string/category_computer_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

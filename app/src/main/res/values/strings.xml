@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Ecommerce Concept</string>
+    <string name="category_title">Select Category</string>
+    <string name="categories_expand">view all</string>
+    <string name="category_computer_title">Computer</string>
+    <string name="search_hint">Search</string>
+    <string name="hot_sales_title">Hot sales</string>
+    <string name="buy">Buy now!</string>
+    <string name="best_seller_title">Best Seller</string>
+    <string name="expand_hot_sales">see more</string>
+    <string name="price_format_string">$%1$s</string>
+    <string name="filter_options_title">Filter options</string>
+    <string name="no_data_exception">No data</string>
+    <string name="brand_filter_title">Brand</string>
+    <string name="price_filter_title">Price</string>
+    <string name="size_filter_title">Size</string>
+    <string name="product_details_title">Product Details</string>
+    <string name="product_details_shop_tab_title">Shop</string>
+    <string name="product_details_details_tab_title">Details</string>
+    <string name="product_details_features_tab_title">Features</string>
+    <string name="selector_title">Select color and capacity</string>
+    <string name="capacity_format_string">%1$s GB</string>
+    <string name="explorer">Explorer</string>
+    <string name="cart">Cart</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <string name="add_address_title">Add address</string>
+    <string name="my_cart">My Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="delivery_title">Delivery</string>
+    <string name="sum_title">Total</string>
+    <string name="sum_value_format_string">$%1$s us</string>
+    <string name="free_delivery_value">Free</string>
+</resources>

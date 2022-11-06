@@ -1,0 +1,3 @@
+package io.github.grishaninvyacheslav.ecommerce_concept.ui.adapters
+
+interface DisplayableItem

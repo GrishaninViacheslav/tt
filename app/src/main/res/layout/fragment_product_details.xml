@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back"
+            style="@style/IconButtonStyle"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="37dp"
+            android:backgroundTint="@color/blue"
+            app:cornerRadius="15dp"
+            app:icon="@drawable/ic_back"
+            app:iconTint="@color/white"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/product_details_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/mark_pro_medium"
+            android:text="@string/product_details_title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_big"
+            app:layout_constraintBottom_toBottomOf="@id/back"
+            app:layout_constraintLeft_toRightOf="@id/back"
+            app:layout_constraintRight_toLeftOf="@id/cart"
+            app:layout_constraintTop_toTopOf="@id/back" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cart"
+            style="@style/IconButtonStyle"
+            android:layout_marginTop="37dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="@color/orange"
+            app:cornerRadius="15dp"
+            app:icon="@drawable/ic_cart"
+            app:iconTint="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/product_details_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/product_images_list"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_images_list"
+                card_view:cardElevation="15dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:layout_marginTop="32dp"
+                android:elevation="100dp"
+                android:fontFamily="@font/mark_pro_medium"
+                tools:text="Galaxy Note 20 Ultra"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_title"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/favorite"
+                app:layout_constraintTop_toBottomOf="@id/product_images_list" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favorite"
+                style="@style/IconButtonStyle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="37dp"
+                android:backgroundTint="@color/blue"
+                android:elevation="100dp"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/ic_favorite"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/name"
+                app:layout_constraintLeft_toRightOf="@id/name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/name" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:elevation="100dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:stepSize="0.1"
+                app:layout_constraintLeft_toLeftOf="@id/name"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                tools:rating="4.5" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="100dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/orange"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextAppearance="@style/ProductDetailsTabTextStyle" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
