@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constrained"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="item_0, item_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+        android:id="@+id/item_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingVertical="6dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/barrier_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/barrier_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+        android:id="@+id/item_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingVertical="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="17dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/barrier_horizontal"
+        app:layout_constraintLeft_toRightOf="@+id/barrier_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="item_0, item_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+        android:id="@+id/item_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingVertical="6dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/barrier_vertical"
+        app:layout_constraintTop_toBottomOf="@id/barrier_horizontal" />
+
+    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+        android:id="@+id/item_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingVertical="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="17dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/barrier_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

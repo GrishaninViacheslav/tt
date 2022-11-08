@@ -1,0 +1,10 @@
+<resources>
+    <string name="price_format_string">$%1$s</string>
+    <string name="add_address_title">Add address</string>
+    <string name="my_cart">My Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="delivery_title">Delivery</string>
+    <string name="sum_title">Total</string>
+    <string name="sum_value_format_string">$%1$s us</string>
+    <string name="free_delivery_value">Free</string>
+</resources>

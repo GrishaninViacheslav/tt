@@ -71,6 +71,63 @@
         <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3171875" />
         <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/xml/rating_empty.xml" value="0.3171875" />
         <entry key="..\:/Users/Saeng/AndroidStudioProjects/ecommerceconcept/app/src/main/res/xml/rating_fill.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/bg_bottom_navigation_bar.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/bg_capacity_option_disabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/bg_counter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_camera.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_cart.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_check.xml" value="0.236" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_favorite.xml" value="0.317" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_home.xml" value="0.317" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_logo_foreground.xml" value="0.385" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/ic_profile.xml" value="0.317" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/drawable/rounded_dialog.xml" value="0.317" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/layout/activity_main.xml" value="0.3140625" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.317" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/drawable/bg_counter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/drawable/ic_back.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/drawable/ic_decrease_counter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/drawable/ic_increase_counter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/drawable/ic_location.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/drawable/ic_remove.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/layout/fragment_cart.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/layout/item_basket.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/cart/src/main/res/layout/view_counter.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/bg_circle.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/bg_gradient.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_category_books.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_category_computer.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_category_health.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_category_phones.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_close.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_expand.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_favorite_disabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_favorite_enabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_filter.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_location.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_new_sale.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_qr.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/drawable/ic_search.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/layout/dialog_filter_options.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/layout/item_best_sellers_page.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/layout/item_category.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/layout/item_hot_sale.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/layout/menu_dropdown_brand.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/explorer/src/main/res/layout/view_best_seller_item.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/bg_capacity_option_disabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/bg_capacity_option_enabled.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/bg_circle.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_back.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_camera.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_cart.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_check.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_cpu.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_favorite.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/drawable/ic_sd.xml" value="0.32" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/layout/fragment_product_details.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/layout/fragment_product_details_tab.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/layout/item_product_image.xml" value="0.3171875" />
+        <entry key="..\:/Users/Saeng/AndroidStudioProjects/tt_new/product-details/src/main/res/layout/view_product_details_tab_text.xml" value="0.3171875" />
       </map>
     </option>
   </component>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="category_title">Select Category</string>
+    <string name="categories_expand">view all</string>
+    <string name="category_computer_title">Computer</string>
+    <string name="search_hint">Search</string>
+    <string name="hot_sales_title">Hot sales</string>
+    <string name="buy">Buy now!</string>
+    <string name="best_seller_title">Best Seller</string>
+    <string name="expand_hot_sales">see more</string>
+    <string name="price_format_string">$%1$s</string>
+    <string name="filter_options_title">Filter options</string>
+    <string name="no_data_exception">No data</string>
+    <string name="brand_filter_title">Brand</string>
+    <string name="price_filter_title">Price</string>
+    <string name="size_filter_title">Size</string>
+    <string name="add_address_title">Add address</string>
+    <string name="computer_filter">Computer</string>
+    <string name="health_filter">Health</string>
+    <string name="books_filter">Books</string>
+</resources>
