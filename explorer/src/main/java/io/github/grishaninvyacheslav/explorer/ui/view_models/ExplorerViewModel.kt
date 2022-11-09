@@ -2,21 +2,21 @@ package io.github.grishaninvyacheslav.explorer.ui.view_models
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import io.github.grishaninvyacheslav.core_ui.ui.BaseViewModel
-import io.github.grishaninvyacheslav.explorer.domain.use_cases.filter_categories.FilterCategoriesUseCase
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import io.github.grishaninvyacheslav.explorer.data.IExplorerRepository
+import io.github.grishaninvyacheslav.explorer.domain.use_cases.filter_categories.FilterCategoriesUseCase
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.BestSellersState
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.CategoriesState
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.HotSalesState
 import kotlinx.coroutines.CoroutineExceptionHandler
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class ExplorerViewModel(
     private val filterCategoriesUseCase: FilterCategoriesUseCase,
     private val explorerRepository: IExplorerRepository
-) : BaseViewModel() {
+) : ViewModel() {
     private val mutableCategoriesState: MutableLiveData<CategoriesState> = MutableLiveData()
     val categoriesState: LiveData<CategoriesState>
         get() {
@@ -25,11 +25,11 @@ class ExplorerViewModel(
             }
             return mutableCategoriesState.apply {
                 mutableCategoriesState.value = CategoriesState.Loading
-                CoroutineScope(Dispatchers.IO + categoriesExceptionHandler).launch {
+                viewModelScope.launch(Dispatchers.IO + categoriesExceptionHandler) {
                     mutableCategoriesState.postValue(
                         CategoriesState.Success(filterCategoriesUseCase.getCategories())
                     )
-                }.also { cancelableJobs.add(it) }
+                }
             }
         }
 
@@ -41,11 +41,11 @@ class ExplorerViewModel(
             }
             return mutableHotSalesState.apply {
                 mutableHotSalesState.value = HotSalesState.Loading
-                CoroutineScope(Dispatchers.IO + hotSalesExceptionHandler).launch {
+                viewModelScope.launch(Dispatchers.IO + hotSalesExceptionHandler) {
                     mutableHotSalesState.postValue(
                         HotSalesState.Success(explorerRepository.getHotSales())
                     )
-                }.also { cancelableJobs.add(it) }
+                }
             }
         }
 
@@ -57,11 +57,11 @@ class ExplorerViewModel(
             }
             return mutableBestSellersState.apply {
                 mutableBestSellersState.value = BestSellersState.Loading
-                CoroutineScope(Dispatchers.IO + bestSellersExceptionHandler).launch {
+                viewModelScope.launch(Dispatchers.IO + bestSellersExceptionHandler) {
                     mutableBestSellersState.postValue(
                         BestSellersState.Success(explorerRepository.getBestSellers())
                     )
-                }.also { cancelableJobs.add(it) }
+                }
             }
         }
 
@@ -70,7 +70,7 @@ class ExplorerViewModel(
             return
         }
         mutableCategoriesState.value = CategoriesState.Loading
-        CoroutineScope(Dispatchers.IO + categoriesExceptionHandler).launch {
+        viewModelScope.launch(Dispatchers.IO + categoriesExceptionHandler) {
             mutableCategoriesState.postValue(
                 CategoriesState.Success(
                     filterCategoriesUseCase.selectCategory(
@@ -78,7 +78,7 @@ class ExplorerViewModel(
                     )
                 )
             )
-        }.also { cancelableJobs.add(it) }
+        }
     }
 
     private val categoriesExceptionHandler = CoroutineExceptionHandler { _, throwable ->

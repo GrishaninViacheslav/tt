@@ -35,4 +35,7 @@ android {
 dependencies {
     implementation project(path: ':core')
     implementation project(path: ':network')
+
+    // ViewModel
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
 }
