@@ -1,6 +1,5 @@
 package io.github.grishaninvyacheslav.product_details.ui.fragments
 
-import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -51,8 +50,7 @@ class ProductDetailsFragment :
     }
 
     private fun initTabLayout() {
-        adapter = ProductDetailsTabsAdapter(requireActivity())
-        binding.pager.adapter = adapter
+        binding.pager.adapter = ProductDetailsTabsAdapter(requireActivity())
 
         TabLayoutMediator(binding.tabLayout, binding.pager) { tab, position ->
             tab.customView =
@@ -66,9 +64,10 @@ class ProductDetailsFragment :
             }
         }.attach()
 
-        regularTypeFace = ResourcesCompat.getFont(requireContext(), io.github.grishaninvyacheslav.core_ui.R.font.mark_pro_regular)!!
-        boldTypeFace = ResourcesCompat.getFont(requireContext(), io.github.grishaninvyacheslav.core_ui.R.font.mark_pro_bold)!!
         binding.tabLayout.addOnTabSelectedListener(object : OnTabSelectedListener {
+            private val regularTypeFace = ResourcesCompat.getFont(requireContext(), io.github.grishaninvyacheslav.core_ui.R.font.mark_pro_regular)!!
+            private val boldTypeFace = ResourcesCompat.getFont(requireContext(), io.github.grishaninvyacheslav.core_ui.R.font.mark_pro_bold)!!
+
             override fun onTabSelected(tab: TabLayout.Tab) {
                 (tab.customView as TextView).apply {
                     setTextColor(ContextCompat.getColor(requireContext(), R.color.blue))
@@ -124,11 +123,6 @@ class ProductDetailsFragment :
             }
         }
     }
-
-    private lateinit var adapter: ProductDetailsTabsAdapter
-
-    lateinit var regularTypeFace: Typeface
-    lateinit var boldTypeFace: Typeface
 
     private val router: Router by inject()
 
