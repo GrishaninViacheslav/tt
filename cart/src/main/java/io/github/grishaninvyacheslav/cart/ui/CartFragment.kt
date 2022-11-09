@@ -69,7 +69,7 @@ class CartFragment :
         }
     }
 
-    private val basketAdapterDelegate = BasketAdapterDelegate()
+    private val basketAdapterDelegate: BasketAdapterDelegate by inject()
 
     private val viewModel: CartViewModel by viewModel()
 

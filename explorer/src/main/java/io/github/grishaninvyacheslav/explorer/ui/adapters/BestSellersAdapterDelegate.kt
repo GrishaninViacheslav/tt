@@ -8,15 +8,17 @@ import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.R
 import io.github.grishaninvyacheslav.explorer.databinding.ItemBestSellersPageBinding
 import io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
-import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
 import io.github.grishaninvyacheslav.navigation.domain.use_cases.NavigateToProductDetailsUseCase
+import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
 import io.github.grishaninvyacheslav.network.data.data_entity.best_seller.BestSellerEntity
 import io.github.grishaninvyacheslav.network.data.data_entity.best_seller.BestSellerPageEntity
-import org.koin.java.KoinJavaComponent
 import java.text.NumberFormat
 import java.util.*
 
-class BestSellersAdapterDelegate {
+class BestSellersAdapterDelegate(
+    private val resourcesProvider: IResourcesProvider,
+    private val navigateToProductDetailsUseCase: NavigateToProductDetailsUseCase
+) {
     val adapterDelegate =
         adapterDelegateViewBinding<BestSellerPageEntity, DisplayableItem, ItemBestSellersPageBinding>(
             { layoutInflater, root ->
@@ -69,10 +71,4 @@ class BestSellersAdapterDelegate {
                 isVisible = false
             }
         }
-
-    private val resourcesProvider: IResourcesProvider by KoinJavaComponent.inject(IResourcesProvider::class.java)
-
-    private val navigateToProductDetailsUseCase: NavigateToProductDetailsUseCase by KoinJavaComponent.inject(
-        NavigateToProductDetailsUseCase::class.java
-    )
 }

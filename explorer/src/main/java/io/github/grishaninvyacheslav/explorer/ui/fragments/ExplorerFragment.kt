@@ -13,14 +13,15 @@ import io.github.grishaninvyacheslav.explorer.databinding.FragmentExplorerBindin
 import io.github.grishaninvyacheslav.explorer.ui.adapters.BestSellersAdapterDelegate
 import io.github.grishaninvyacheslav.explorer.ui.adapters.CategoriesAdapterDelegate
 import io.github.grishaninvyacheslav.explorer.ui.adapters.HotSalesAdapterDelegate
+import io.github.grishaninvyacheslav.explorer.ui.view_models.ExplorerViewModel
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.BestSellersState
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.CategoriesState
-import io.github.grishaninvyacheslav.explorer.ui.view_models.ExplorerViewModel
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.HotSalesState
 import io.github.grishaninvyacheslav.explorer.utills.toBestSellersPages
-import io.github.grishaninvyacheslav.network.data.data_entity.best_seller.BestSellerPageEntity
 import io.github.grishaninvyacheslav.network.data.data_entity.HotSaleEntity
 import io.github.grishaninvyacheslav.network.data.data_entity.ProductCategoryEntity
+import io.github.grishaninvyacheslav.network.data.data_entity.best_seller.BestSellerPageEntity
+import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ExplorerFragment :
@@ -105,6 +106,7 @@ class ExplorerFragment :
         categoryList.adapter = ListAdapter(categoriesAdapterDelegate.adapterDelegate).apply {
             items = productCategories
         }
+        categoriesAdapterDelegate.onClickEvent = { viewModel.selectCategory(it.index) }
     }
 
     private fun initHotSalesList(hotSales: List<HotSaleEntity>) = with(binding) {
@@ -121,11 +123,9 @@ class ExplorerFragment :
         bestSellersList.offscreenPageLimit = 1
     }
 
-    private val categoriesAdapterDelegate = CategoriesAdapterDelegate {
-        viewModel.selectCategory(it.index)
-    }
-    private val hotSalesAdapterDelegate = HotSalesAdapterDelegate()
-    private val bestSalesAdapterDelegate = BestSellersAdapterDelegate()
+    private val categoriesAdapterDelegate: CategoriesAdapterDelegate by inject()
+    private val hotSalesAdapterDelegate: HotSalesAdapterDelegate by inject()
+    private val bestSalesAdapterDelegate: BestSellersAdapterDelegate by inject()
 
     private val viewModel: ExplorerViewModel by viewModel()
 }

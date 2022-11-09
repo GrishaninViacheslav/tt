@@ -5,14 +5,16 @@ import com.squareup.picasso.Picasso
 import io.github.grishaninvyacheslav.cart.R
 import io.github.grishaninvyacheslav.cart.databinding.ItemBasketBinding
 import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
-import io.github.grishaninvyacheslav.network.data.data_entity.cart.BasketItemEntity
-import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
 import io.github.grishaninvyacheslav.navigation.domain.use_cases.NavigateToProductDetailsUseCase
-import org.koin.java.KoinJavaComponent
+import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
+import io.github.grishaninvyacheslav.network.data.data_entity.cart.BasketItemEntity
 import java.text.NumberFormat
 import java.util.*
 
-class BasketAdapterDelegate {
+class BasketAdapterDelegate(
+    private val resourcesProvider: IResourcesProvider,
+    private val navigateToProductDetailsUseCase: NavigateToProductDetailsUseCase
+) {
     val adapterDelegate =
         adapterDelegateViewBinding<BasketItemEntity, DisplayableItem, ItemBasketBinding>(
             { layoutInflater, root -> ItemBasketBinding.inflate(layoutInflater, root, false) }
@@ -30,8 +32,4 @@ class BasketAdapterDelegate {
                 )
             }
         }
-
-    private val resourcesProvider: IResourcesProvider by KoinJavaComponent.inject(IResourcesProvider::class.java)
-
-    private val navigateToProductDetailsUseCase: NavigateToProductDetailsUseCase by KoinJavaComponent.inject(NavigateToProductDetailsUseCase::class.java)
 }

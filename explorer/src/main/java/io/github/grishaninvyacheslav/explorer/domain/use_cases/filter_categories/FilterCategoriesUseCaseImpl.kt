@@ -3,9 +3,8 @@ package io.github.grishaninvyacheslav.explorer.domain.use_cases.filter_categorie
 import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.R
 import io.github.grishaninvyacheslav.network.data.data_entity.ProductCategoryEntity
-import org.koin.java.KoinJavaComponent
 
-class FilterCategoriesUseCaseImpl: FilterCategoriesUseCase {
+class FilterCategoriesUseCaseImpl(private val resourcesProvider: IResourcesProvider): FilterCategoriesUseCase {
     override suspend fun getCategories(): List<ProductCategoryEntity> {
         return categories
     }
@@ -25,6 +24,4 @@ class FilterCategoriesUseCaseImpl: FilterCategoriesUseCase {
             ProductCategoryEntity(3, resourcesProvider.getString(R.string.books_filter), R.drawable.ic_category_books, false)
         )
     }
-
-    private val resourcesProvider: IResourcesProvider by KoinJavaComponent.inject(IResourcesProvider::class.java)
 }
