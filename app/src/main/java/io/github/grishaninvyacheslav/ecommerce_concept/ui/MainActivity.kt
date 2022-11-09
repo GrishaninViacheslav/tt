@@ -1,30 +1,25 @@
 package io.github.grishaninvyacheslav.ecommerce_concept.ui
 
+import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.github.terrakok.cicerone.NavigatorHolder
-import com.github.terrakok.cicerone.Router
 import com.github.terrakok.cicerone.androidx.AppNavigator
+import io.github.grishaninvyacheslav.core_ui.ui.IBottomNavigation
 import io.github.grishaninvyacheslav.ecommerce_concept.R
 import io.github.grishaninvyacheslav.ecommerce_concept.databinding.ActivityMainBinding
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.fragments.explorer.ExplorerFragment
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.screens.IScreens
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.view_models.explorer.BestSellersState
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.view_models.explorer.ExplorerViewModel
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.view_models.main.BasketSizeState
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.view_models.main.MainViewModel
-import io.github.grishaninvyacheslav.ecommerce_concept.utills.toBestSellersPages
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity(), IBottomNavigation {
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
@@ -32,7 +27,7 @@ class MainActivity : AppCompatActivity(), IBottomNavigation {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         if (savedInstanceState == null) {
-            router.replaceScreen(screens.explorer())
+            viewModel.replaceWithExplorer()
         }
         initViews()
         initObservers()
@@ -42,11 +37,11 @@ class MainActivity : AppCompatActivity(), IBottomNavigation {
         bottomNavigationBar.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.explorer -> {
-                    router.navigateTo(screens.explorer())
+                    viewModel.replaceWithExplorer()
                     return@setOnItemSelectedListener true
                 }
                 R.id.cart -> {
-                    router.navigateTo(screens.cart())
+                    viewModel.navigateToCart()
                     return@setOnItemSelectedListener false
                 }
                 else -> {
@@ -56,7 +51,7 @@ class MainActivity : AppCompatActivity(), IBottomNavigation {
         }
     }
 
-    private fun initObservers() = with(binding) {
+    private fun initObservers() {
         viewModel.basketSizeState.observe(this@MainActivity) { renderBasketSizeState(it) }
     }
 
@@ -64,8 +59,11 @@ class MainActivity : AppCompatActivity(), IBottomNavigation {
         when (state) {
             BasketSizeState.Loading -> {}
             is BasketSizeState.Success -> setBadgeNumber(state.basketSize)
-            is BasketSizeState.Error -> Toast.makeText(applicationContext, state.error.message, Toast.LENGTH_LONG).show()
-
+            is BasketSizeState.Error -> Toast.makeText(
+                applicationContext,
+                state.error.message,
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 
@@ -97,8 +95,6 @@ class MainActivity : AppCompatActivity(), IBottomNavigation {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val router: Router by inject()
-    private val screens: IScreens by inject()
     private val navigatorHolder: NavigatorHolder by inject()
     private val navigator: AppNavigator by lazy {
         object : AppNavigator(this, R.id.container, supportFragmentManager) {

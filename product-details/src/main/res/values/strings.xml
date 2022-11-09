@@ -1,0 +1,9 @@
+<resources>
+    <string name="no_data_exception">No data</string>
+    <string name="product_details_title">Product Details</string>
+    <string name="product_details_shop_tab_title">Shop</string>
+    <string name="product_details_details_tab_title">Details</string>
+    <string name="product_details_features_tab_title">Features</string>
+    <string name="selector_title">Select color and capacity</string>
+    <string name="capacity_format_string">%1$s GB</string>
+</resources>
