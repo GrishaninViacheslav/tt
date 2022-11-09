@@ -9,4 +9,5 @@
     <color name="blue_half_opacity">#80010035</color>
     <color name="orange">#FF6E4E</color>
     <color name="alt_grey">#B7B7B7</color>
+    <color name="background">#F8F8F8</color>
 </resources>

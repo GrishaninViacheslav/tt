@@ -37,10 +37,13 @@
         <item name="endIconTint">@color/dark_grey</item>
     </style>
 
-    <style name="FilterOptionAutoCompleteTextViewStyle" parent = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+    <style name="FilterOptionAutoCompleteTextViewStyle" parent = "@style/Widget.AppCompat.Light.AutoCompleteTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@null</item>
+        <item name="android:background">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:popupBackground">@color/white</item>
         <item name="android:dropDownSelector">@drawable/filter_spinner_dropdown_bg</item>
         <item name="android:ellipsize">end</item>
         <item name="android:fontFamily">@font/mark_pro_regular</item>

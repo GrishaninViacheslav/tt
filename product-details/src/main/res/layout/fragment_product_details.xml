@@ -65,10 +65,10 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/product_images_list"
                 android:layout_width="0dp"
-                android:orientation="horizontal"
                 android:layout_height="wrap_content"
                 android:clipChildren="false"
                 android:clipToPadding="false"
+                android:orientation="horizontal"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/back" />
@@ -78,6 +78,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="14dp"
+                android:backgroundTint="@color/background"
                 app:cardCornerRadius="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -93,14 +94,14 @@
                 android:layout_marginTop="32dp"
                 android:elevation="100dp"
                 android:fontFamily="@font/mark_pro_medium"
-                tools:text="Galaxy Note 20 Ultra"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size_title"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/favorite"
-                app:layout_constraintTop_toBottomOf="@id/product_images_list" />
+                app:layout_constraintTop_toBottomOf="@id/product_images_list"
+                tools:text="Galaxy Note 20 Ultra" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/favorite"
@@ -137,6 +138,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@color/background"
                 android:elevation="100dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -150,6 +152,7 @@
                 android:id="@+id/pager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background"
                 android:elevation="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"

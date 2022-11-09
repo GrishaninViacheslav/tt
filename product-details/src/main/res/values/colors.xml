@@ -7,4 +7,5 @@
     <color name="alt_grey">#B7B7B7</color>
     <color name="dark_grey">#B3B3C3</color>
     <color name="yellow">#FFB800</color>
+    <color name="background">#F8F8F8</color>
 </resources>
