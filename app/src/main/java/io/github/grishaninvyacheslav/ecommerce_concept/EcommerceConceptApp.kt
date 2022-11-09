@@ -6,6 +6,7 @@ import io.github.grishaninvyacheslav.cart.di.cartUseCasesModule
 import io.github.grishaninvyacheslav.cart.di.cartViewModelsModule
 import io.github.grishaninvyacheslav.cart.di.cartModelsModule
 import io.github.grishaninvyacheslav.core_ui.di.coreModelsModule
+import io.github.grishaninvyacheslav.ecommerce_concept.di.mainUseCasesModule
 import io.github.grishaninvyacheslav.explorer.di.explorerUseCasesModule
 import io.github.grishaninvyacheslav.explorer.di.explorerViewModelsModule
 import io.github.grishaninvyacheslav.explorer.di.explorerModelsModule
@@ -26,6 +27,7 @@ class EcommerceConceptApp : Application() {
             androidContext(this@EcommerceConceptApp)
             modules(
                 mainViewModelsModule,
+                mainUseCasesModule,
 
                 explorerAdapterModule,
                 explorerViewModelsModule,

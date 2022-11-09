@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import io.github.grishaninvyacheslav.explorer.data.IExplorerRepository
+import io.github.grishaninvyacheslav.explorer.domain.use_cases.explorer.ExplorerUseCases
 import io.github.grishaninvyacheslav.explorer.domain.use_cases.filter_categories.FilterCategoriesUseCase
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.BestSellersState
 import io.github.grishaninvyacheslav.explorer.ui.view_models.states.CategoriesState
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 
 class ExplorerViewModel(
     private val filterCategoriesUseCase: FilterCategoriesUseCase,
-    private val explorerRepository: IExplorerRepository
+    private val explorerUseCases: ExplorerUseCases
 ) : ViewModel() {
     private val mutableCategoriesState: MutableLiveData<CategoriesState> = MutableLiveData()
     val categoriesState: LiveData<CategoriesState>
@@ -43,7 +43,7 @@ class ExplorerViewModel(
                 mutableHotSalesState.value = HotSalesState.Loading
                 viewModelScope.launch(Dispatchers.IO + hotSalesExceptionHandler) {
                     mutableHotSalesState.postValue(
-                        HotSalesState.Success(explorerRepository.getHotSales())
+                        HotSalesState.Success(explorerUseCases.getHotSales())
                     )
                 }
             }
@@ -59,7 +59,7 @@ class ExplorerViewModel(
                 mutableBestSellersState.value = BestSellersState.Loading
                 viewModelScope.launch(Dispatchers.IO + bestSellersExceptionHandler) {
                     mutableBestSellersState.postValue(
-                        BestSellersState.Success(explorerRepository.getBestSellers())
+                        BestSellersState.Success(explorerUseCases.getBestSellers())
                     )
                 }
             }
