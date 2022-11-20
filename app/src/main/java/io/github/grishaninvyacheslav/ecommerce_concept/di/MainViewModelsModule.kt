@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.ecommerce_concept.di
 
-import io.github.grishaninvyacheslav.ecommerce_concept.ui.MainViewModel
+import io.github.grishaninvyacheslav.ecommerce_concept.presentation.MainViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

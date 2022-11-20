@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.cart.di
 
-import io.github.grishaninvyacheslav.cart.ui.CartViewModel
+import io.github.grishaninvyacheslav.cart.presentation.CartViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

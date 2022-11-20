@@ -15,7 +15,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+    <io.github.grishaninvyacheslav.explorer.presentation.cutom_views.BestSellerItem
         android:id="@+id/item_0"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -29,7 +29,7 @@
         app:layout_constraintRight_toLeftOf="@id/barrier_vertical"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+    <io.github.grishaninvyacheslav.explorer.presentation.cutom_views.BestSellerItem
         android:id="@+id/item_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+    <io.github.grishaninvyacheslav.explorer.presentation.cutom_views.BestSellerItem
         android:id="@+id/item_2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -67,7 +67,7 @@
         app:layout_constraintRight_toLeftOf="@id/barrier_vertical"
         app:layout_constraintTop_toBottomOf="@id/barrier_horizontal" />
 
-    <io.github.grishaninvyacheslav.explorer.ui.cutom_views.BestSellerItem
+    <io.github.grishaninvyacheslav.explorer.presentation.cutom_views.BestSellerItem
         android:id="@+id/item_3"
         android:layout_width="0dp"
         android:layout_height="0dp"
