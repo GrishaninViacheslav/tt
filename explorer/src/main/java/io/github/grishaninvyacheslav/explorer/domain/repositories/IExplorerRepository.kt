@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.explorer.data
+package io.github.grishaninvyacheslav.explorer.domain.repositories
 
 import io.github.grishaninvyacheslav.network.data.data_entity.best_seller.BestSellerEntity
 import io.github.grishaninvyacheslav.network.data.data_entity.HotSaleEntity

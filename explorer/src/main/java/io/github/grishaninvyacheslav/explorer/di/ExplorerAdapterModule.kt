@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.explorer.di
 
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.presentation.adapters.BestSellersAdapterDelegate
 import io.github.grishaninvyacheslav.explorer.presentation.adapters.CategoriesAdapterDelegate
 import io.github.grishaninvyacheslav.explorer.presentation.adapters.HotSalesAdapterDelegate

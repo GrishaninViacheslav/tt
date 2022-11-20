@@ -1,7 +1,7 @@
 package io.github.grishaninvyacheslav.cart.di
 
 import io.github.grishaninvyacheslav.cart.presentation.adapters.BasketAdapterDelegate
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.navigation.domain.use_cases.NavigateToProductDetailsUseCase
 import org.koin.dsl.module
 

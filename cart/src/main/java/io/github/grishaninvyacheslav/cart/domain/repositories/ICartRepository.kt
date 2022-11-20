@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.cart.data
+package io.github.grishaninvyacheslav.cart.domain.repositories
 
 import io.github.grishaninvyacheslav.network.data.data_entity.cart.CartEntity
 

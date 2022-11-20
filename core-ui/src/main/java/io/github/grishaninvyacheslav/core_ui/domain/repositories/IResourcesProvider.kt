@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.core_ui.data
+package io.github.grishaninvyacheslav.core_ui.domain.repositories
 
 import android.graphics.drawable.Drawable
 

@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.product_details.data
+package io.github.grishaninvyacheslav.product_details.domain.providers
 
 import io.github.grishaninvyacheslav.network.data.data_entity.ProductDetailsEntity
 

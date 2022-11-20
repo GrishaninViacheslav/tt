@@ -1,7 +1,8 @@
 package io.github.grishaninvyacheslav.explorer.data
 
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.R
+import io.github.grishaninvyacheslav.explorer.domain.repositories.IExplorerRepository
 import io.github.grishaninvyacheslav.network.data.data_sources.IMockDataSource
 import io.github.grishaninvyacheslav.network.data.data_entity.best_seller.BestSellerEntity
 import io.github.grishaninvyacheslav.network.data.data_entity.HotSaleEntity

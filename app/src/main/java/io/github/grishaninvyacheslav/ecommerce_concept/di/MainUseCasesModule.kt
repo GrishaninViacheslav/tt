@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.ecommerce_concept.di
 
-import io.github.grishaninvyacheslav.cart.data.ICartRepository
+import io.github.grishaninvyacheslav.cart.domain.repositories.ICartRepository
 import io.github.grishaninvyacheslav.ecommerce_concept.domain.use_cases.GetItemsInCartNumberUseCase
 import io.github.grishaninvyacheslav.ecommerce_concept.domain.use_cases.GetItemsInCartNumberUseCaseImpl
 import org.koin.dsl.module

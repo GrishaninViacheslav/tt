@@ -4,7 +4,7 @@ import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import com.squareup.picasso.Picasso
 import io.github.grishaninvyacheslav.cart.R
 import io.github.grishaninvyacheslav.cart.databinding.ItemBasketBinding
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.navigation.domain.use_cases.NavigateToProductDetailsUseCase
 import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
 import io.github.grishaninvyacheslav.network.data.data_entity.cart.BasketItemEntity

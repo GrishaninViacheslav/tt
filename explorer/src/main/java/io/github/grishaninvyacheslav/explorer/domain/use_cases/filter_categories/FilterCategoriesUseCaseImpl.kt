@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.explorer.domain.use_cases.filter_categories
 
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.R
 import io.github.grishaninvyacheslav.network.data.data_entity.ProductCategoryEntity
 

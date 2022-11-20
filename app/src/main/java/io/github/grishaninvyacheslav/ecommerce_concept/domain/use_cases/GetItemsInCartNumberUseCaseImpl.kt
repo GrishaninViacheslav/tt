@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.ecommerce_concept.domain.use_cases
 
-import io.github.grishaninvyacheslav.cart.data.ICartRepository
+import io.github.grishaninvyacheslav.cart.domain.repositories.ICartRepository
 
 class GetItemsInCartNumberUseCaseImpl(
     private val cartRepository: ICartRepository

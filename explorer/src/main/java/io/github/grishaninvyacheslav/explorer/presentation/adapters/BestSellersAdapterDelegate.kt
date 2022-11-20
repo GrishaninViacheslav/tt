@@ -4,7 +4,7 @@ import android.graphics.Paint
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import com.squareup.picasso.Picasso
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.R
 import io.github.grishaninvyacheslav.explorer.databinding.ItemBestSellersPageBinding
 import io.github.grishaninvyacheslav.explorer.presentation.cutom_views.BestSellerItem

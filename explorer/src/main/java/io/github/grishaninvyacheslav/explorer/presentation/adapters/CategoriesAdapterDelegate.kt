@@ -1,7 +1,7 @@
 package io.github.grishaninvyacheslav.explorer.presentation.adapters
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
 import io.github.grishaninvyacheslav.explorer.R
 import io.github.grishaninvyacheslav.explorer.databinding.ItemCategoryBinding
 import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
