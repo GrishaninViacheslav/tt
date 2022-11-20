@@ -6,10 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.terrakok.cicerone.Router
 import io.github.grishaninvyacheslav.cart.R
 import io.github.grishaninvyacheslav.cart.databinding.FragmentCartBinding
-import io.github.grishaninvyacheslav.cart.presentation.adapters.BasketAdapterDelegate
+import io.github.grishaninvyacheslav.cart.presentation.adapters.BasketAdapter
 import io.github.grishaninvyacheslav.core_ui.presentation.BaseFragment
 import io.github.grishaninvyacheslav.core_ui.presentation.IBottomNavigation
-import io.github.grishaninvyacheslav.core_ui.presentation.adapters.ListAdapter
 import io.github.grishaninvyacheslav.network.data.data_entity.cart.BasketItemEntity
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -64,12 +63,12 @@ class CartFragment :
 
     private fun initBasketList(basketEntities: List<BasketItemEntity>) = with(binding) {
         basketList.layoutManager = LinearLayoutManager(requireContext())
-        basketList.adapter = ListAdapter(basketAdapterDelegate.adapterDelegate).apply {
+        basketList.adapter = basketAdapter.apply {
             items = basketEntities
         }
     }
 
-    private val basketAdapterDelegate: BasketAdapterDelegate by inject()
+    private val basketAdapter: BasketAdapter by inject()
 
     private val viewModel: CartViewModel by viewModel()
 

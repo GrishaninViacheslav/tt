@@ -10,9 +10,12 @@ import io.github.grishaninvyacheslav.core_ui.presentation.BaseFragment
 import io.github.grishaninvyacheslav.core_ui.presentation.IBottomNavigation
 import io.github.grishaninvyacheslav.core_ui.presentation.adapters.ListAdapter
 import io.github.grishaninvyacheslav.explorer.databinding.FragmentExplorerBinding
-import io.github.grishaninvyacheslav.explorer.presentation.adapters.BestSellersAdapterDelegate
-import io.github.grishaninvyacheslav.explorer.presentation.adapters.CategoriesAdapterDelegate
-import io.github.grishaninvyacheslav.explorer.presentation.adapters.HotSalesAdapterDelegate
+import io.github.grishaninvyacheslav.explorer.presentation.adapters.best_seller.BestSellersAdapter
+import io.github.grishaninvyacheslav.explorer.presentation.adapters.best_seller.BestSellersAdapterDelegate
+import io.github.grishaninvyacheslav.explorer.presentation.adapters.categories.CategoriesAdapter
+import io.github.grishaninvyacheslav.explorer.presentation.adapters.categories.CategoriesAdapterDelegate
+import io.github.grishaninvyacheslav.explorer.presentation.adapters.hot_sales.HotSalesAdapter
+import io.github.grishaninvyacheslav.explorer.presentation.adapters.hot_sales.HotSalesAdapterDelegate
 import io.github.grishaninvyacheslav.explorer.presentation.view_models.ExplorerViewModel
 import io.github.grishaninvyacheslav.explorer.presentation.view_models.states.BestSellersState
 import io.github.grishaninvyacheslav.explorer.presentation.view_models.states.CategoriesState
@@ -103,29 +106,27 @@ class ExplorerFragment :
     private fun initCategoriesList(productCategories: List<ProductCategoryEntity>) = with(binding) {
         categoryList.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        categoryList.adapter = ListAdapter(categoriesAdapterDelegate.adapterDelegate).apply {
+        categoryList.adapter = categoriesAdapter.apply {
             items = productCategories
         }
-        categoriesAdapterDelegate.onClickEvent = { viewModel.selectCategory(it.index) }
+        categoriesAdapter.adapterDelegate.onClickEvent = { viewModel.selectCategory(it.index) }
     }
 
     private fun initHotSalesList(hotSales: List<HotSaleEntity>) = with(binding) {
         hotSalesList.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        hotSalesList.adapter =
-            ListAdapter(hotSalesAdapterDelegate.adapterDelegate).apply { items = hotSales }
+        hotSalesList.adapter = hotSalesAdapter.apply { items = hotSales }
         hotSalesList.offscreenPageLimit = 1
     }
 
     private fun initBestSellersList(bestSellers: List<BestSellerPageEntity>) = with(binding) {
         bestSellersList.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        bestSellersList.adapter =
-            ListAdapter(bestSalesAdapterDelegate.adapterDelegate).apply { items = bestSellers }
+        bestSellersList.adapter = bestSellersAdapter.apply { items = bestSellers }
         bestSellersList.offscreenPageLimit = 1
     }
 
-    private val categoriesAdapterDelegate: CategoriesAdapterDelegate by inject()
-    private val hotSalesAdapterDelegate: HotSalesAdapterDelegate by inject()
-    private val bestSalesAdapterDelegate: BestSellersAdapterDelegate by inject()
+    private val categoriesAdapter: CategoriesAdapter by inject()
+    private val hotSalesAdapter: HotSalesAdapter by inject()
+    private val bestSellersAdapter: BestSellersAdapter by inject()
 
     private val viewModel: ExplorerViewModel by viewModel()
 }

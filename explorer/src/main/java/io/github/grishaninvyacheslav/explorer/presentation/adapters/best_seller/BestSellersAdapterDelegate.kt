@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.explorer.presentation.adapters
+package io.github.grishaninvyacheslav.explorer.presentation.adapters.best_seller
 
 import android.graphics.Paint
 import androidx.core.view.isVisible

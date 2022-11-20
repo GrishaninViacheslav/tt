@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.explorer.presentation.adapters
+package io.github.grishaninvyacheslav.explorer.presentation.adapters.categories
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
@@ -6,11 +6,10 @@ import io.github.grishaninvyacheslav.explorer.R
 import io.github.grishaninvyacheslav.explorer.databinding.ItemCategoryBinding
 import io.github.grishaninvyacheslav.network.data.data_entity.DisplayableItem
 import io.github.grishaninvyacheslav.network.data.data_entity.ProductCategoryEntity
-import org.koin.core.component.KoinComponent
 
 class CategoriesAdapterDelegate(
     private val resourcesProvider: IResourcesProvider
-) : KoinComponent {
+) {
     val adapterDelegate =
         adapterDelegateViewBinding<ProductCategoryEntity, DisplayableItem, ItemCategoryBinding>(
             { layoutInflater, root -> ItemCategoryBinding.inflate(layoutInflater, root, false) }

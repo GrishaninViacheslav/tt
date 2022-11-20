@@ -1,4 +1,4 @@
-package io.github.grishaninvyacheslav.explorer.presentation.adapters
+package io.github.grishaninvyacheslav.explorer.presentation.adapters.hot_sales
 
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
