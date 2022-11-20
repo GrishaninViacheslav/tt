@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.product_details.di
 
-import io.github.grishaninvyacheslav.product_details.ui.view_models.ProductDetailsViewModel
+import io.github.grishaninvyacheslav.product_details.presentation.view_models.ProductDetailsViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

@@ -1,8 +1,8 @@
 package io.github.grishaninvyacheslav.explorer.di
 
 import com.github.terrakok.cicerone.Router
-import io.github.grishaninvyacheslav.core_ui.data.IResourcesProvider
-import io.github.grishaninvyacheslav.explorer.data.IExplorerRepository
+import io.github.grishaninvyacheslav.core_ui.domain.repositories.IResourcesProvider
+import io.github.grishaninvyacheslav.explorer.domain.repositories.IExplorerRepository
 import io.github.grishaninvyacheslav.explorer.domain.use_cases.ReplaceWithExplorerUseCaseImpl
 import io.github.grishaninvyacheslav.explorer.domain.use_cases.explorer.ExplorerUseCases
 import io.github.grishaninvyacheslav.explorer.domain.use_cases.explorer.ExplorerUseCasesImpl

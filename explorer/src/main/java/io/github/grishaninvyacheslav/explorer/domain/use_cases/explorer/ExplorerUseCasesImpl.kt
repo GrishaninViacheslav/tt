@@ -1,6 +1,6 @@
 package io.github.grishaninvyacheslav.explorer.domain.use_cases.explorer
 
-import io.github.grishaninvyacheslav.explorer.data.IExplorerRepository
+import io.github.grishaninvyacheslav.explorer.domain.repositories.IExplorerRepository
 
 class ExplorerUseCasesImpl(
     private val explorerRepository: IExplorerRepository

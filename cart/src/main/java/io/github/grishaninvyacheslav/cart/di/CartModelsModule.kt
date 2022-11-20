@@ -1,7 +1,7 @@
 package io.github.grishaninvyacheslav.cart.di
 
 import io.github.grishaninvyacheslav.cart.data.CartRepository
-import io.github.grishaninvyacheslav.cart.data.ICartRepository
+import io.github.grishaninvyacheslav.cart.domain.repositories.ICartRepository
 import io.github.grishaninvyacheslav.network.data.data_sources.IMockDataSource
 import org.koin.dsl.module
 
